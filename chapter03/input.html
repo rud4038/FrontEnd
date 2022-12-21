@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        input {
+            width: 50px;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- readonly는 데이터는 날아가는데 disabled 는데이터도 안날라감 -->
+    <form action="">
+        <input type="text" maxlength="20" name="name" value="신경수" disabled><br>
+        <input type="search"><br>
+        <input type="url"><br>
+        <form action="">
+        <button>전송</button>
+    </form><br>
+
+    <form action="">
+        <input type="email" required autofocus><br>
+        <input type="tel" required placeholder="연락처를 입력하세요."><br>
+        <button>전송</button>
+        <input type="reset" value="다지워라">
+    </form><br>
+    
+    <form action="">
+        <div>
+            <input type="radio" id="a1" name="aa" value="이거1번" checked><label for="a1">a1</label>
+            <input type="radio" id="a2" name="aa" value="이거2번"><label for="a2">a2</label>
+            <input type="radio" id="a3" name="bb" value="이거3번"><label for="a3">a3</label>
+            <input type="radio" id="a4" name="bb" value="이거4번"><label for="a4">a4</label>
+        </div>
+        <div>
+            <input type="checkbox" name="hobby" id="h1" value="축구"><label for="h1">축구</label>
+            <input type="checkbox" name="hobby" id="h2" value="야구" checked><label for="h2">야구</label>
+            <input type="checkbox" name="hobby" id="h3" value="족구"><label for="h3">족구</label>
+            <input type="checkbox" name="hobby" id="h4" value="농구"><label for="h4">농구</label>
+        </div>
+        <button>전송</button>
+    </form><br>
+
+    <form action="">
+        <input type="number" name="stock" id="stock-id" min="0" max="10" step="2"><label for="stock-id">수량(<span class="stock-num"></span>)</label>
+        <input type="range" name="stock2" id="stock-id2" min="0" max="10"><label for="stock-id2">수량2(<span class="stock-num"></span>)</label>
+        <button>전송</button>
+    </form>
+
+    <from>
+        <p>날짜</p>
+        <input type="month">
+        <input type="week">
+        <input type="date">
+        <input type="time">
+    </from>
+
+    <form action="">
+        <input type="file" multiple accept=".jpg, .png, .gif">
+    </form>
+
+    <form action="">
+        <label for="memo-id">메모</label><br>
+        <textarea name="memo" id="memo-id" cols="30" rows="10" placeholder="메모를 입력하세요."></textarea>
+    </form>
+
+    <form action="">
+        <select name="programmingLanguage" multiple>
+            <option value="java">java</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+        </select>
+        <input type="text" list="input-list">
+        <datalist id="input-list">
+            <option value="java1">java1</option>
+            <option value="java2">java2</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+        </datalist>
+    </form>
+
+    <script>
+        const stock1 = document.querySelector("#stock-id");
+        const stock2 = document.querySelector("#stock-id2");
+        
+        stock1.onchange = () => {
+            document.querySelectorAll(".stock-num")[0].textContent = stock1.value;
+        }
+        stock2.onchange = () => {
+            document.querySelectorAll(".stock-num")[1].textContent = stock2.value;
+        }
+    </script>
+</body>
+</html>
