@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: orange;
+        }
+
+        /*자기자신 한테는 우선순위가 가장 높지만 상속받은 애들한테는 우선순위가 가장 낮음*/
+        #container{
+            color: brown;
+        }
+
+        .p-text {
+            color: green;
+        }
+        /*조합이 되면 우선순위가 더해져서 우선순위가 높아짐*/
+        #container p {
+            /* color: blue !important; 순서는 클래스가 높지만 !important를 씀으로 순서가 바뀜 */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: red; font-size: 80px;">제목</h1>
+        <p class="p-text">우선순위 테스트1</p>
+        <p class="p-text">우선순위 테스트1</p>
+        <b>우선순위 테스트2</b>
+    </div>
+</body>
+</html>
