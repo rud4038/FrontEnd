@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/568165a5c7.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+        *{
+            margin: 0px;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        header {
+            margin: 0px 0px 20px;
+            background-color: #383d40;
+            height: 45px;
+            position: inherit;
+        }
+        .box1 {
+            margin: 0px 91px;
+            padding: 0px 15px;
+            height: 50px;
+        }
+        .box2{
+            margin: 0px 0px 0px -15px;
+            padding: 15px;
+            height: 50px;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: -8px;
+            left: 34px;
+        }
+        .box2_2 {
+            font-size: 11px;
+            color: #AAAAAA;
+            position: absolute;
+            padding: 1px 3px;
+            top: 18px;
+            left: 63px;
+        }
+        .box3{
+            padding: 15px;
+            width: 150px;
+            /* height: 100%; */
+            position: absolute;
+            top: -3px;
+            right: -10px;
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+    
+            overflow: hidden;
+        }
+        .box4 {
+            line-height: 20px;
+            box-sizing: border-box;
+            width: 30px;
+            font-size: 13px;
+            /* padding: -60px 10px 0px 35px; */
+            position: absolute;
+            top: 18px;
+            left: 50px;
+            color: white;
+    
+        }
+        .drop {
+            border: none;
+            display: block;
+        }
+        .page_header{
+            box-sizing: border-box;
+            margin: 0px 0px 20px;
+            padding: 0px 0px 9px;
+            height: 80px;
+            border-bottom: 1px dotted #AAAAAA;
+        }
+        .project {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 35px;
+            position: absolute;
+            top: 70px;
+            left: 38px;
+        }
+        .fa-solid {
+            position: relative;
+            left: -30px;
+        }
+        .search {
+            position: absolute;
+            top: 85px;
+            right: 110px;
+        }
+        .search2 {
+            padding: 6px 42.5px 6px 12px;
+        }
+        .em {
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 6px 12px;
+            width: 38px;
+            height: 31.74px;
+            position: absolute;
+            top: 86px;
+            right: 70px;
+        }
+        .em2 {
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 6px 12px;
+            width: 38px;
+            height: 31.74px;
+            position: absolute;
+            top: 86px;
+            right: 31px;
+            background-color: #E6E6E6;
+        }
+        .em .fa-solid{
+            position: relative;
+            top: -2px;
+            left: -3px;
+        }
+        .fa-brands {
+            position: relative;
+            top: -2px;
+            left: -1px;
+        }
+        .my1 {
+            position: absolute;
+            top: 160px;
+            left: 40px;
+            color: white;
+            text-decoration: none;
+            width: 200px;
+            padding: 10px 15px;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color: #3498db;
+        }
+        .my2 {
+            box-sizing: border-box;
+            border: 1px hidden black;
+            position: absolute;
+            top: 199px;
+            left: 40px;
+            color: black;
+            text-decoration: none;
+            width: 230px;
+            padding: 10px 15px;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color: white;
+        }
+        .clear{
+            font-size: 14px;
+            height: 34px;
+        }
+        .b1 {
+            box-sizing: border-box;
+            border-radius: 2px;
+            position: absolute;
+            top: 160px;
+            left: 300px;
+            border: 1px solid rgba(174, 169, 169, 0.505);
+            padding: 6px 12px;
+            background-color: #FFFFFF;
+        }
+        .b2 {
+            box-sizing: border-box;
+            color: #FFFFFF;
+            border-radius: 2px;
+            position: absolute;
+            top: 160px;
+            right: 31px;
+            border: 1px solid rgba(174, 169, 169, 0.505);
+            padding: 6px 12px;
+            width: 180px;
+            text-align: right;
+            background-color: #3498db;
+        }
+        .b2 .fa-solid{
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            color: white;
+            background-color: #3498db;
+        }
+        .big_box1 {
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px dotted rgb(164, 154, 154);
+            border-radius: 3px;
+            margin: 0px 0px 20px;
+            padding: 30px 4px 4px;
+            width: 225px;
+            height: 315px;
+            top: 215px;
+            left: 330px;
+        }
+        .big_box2 {
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px dotted rgb(164, 154, 154);
+            border-radius: 3px;
+            margin: 0px 0px 20px;
+            padding: 30px 4px 4px;
+            width: 225px;
+            height: 315px;
+            top: 215px;
+            right: 290px;
+        }
+        .check1 {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        .b3 {
+            position: absolute;
+            border: hidden;
+            width: 30px;
+            height: 12.99px;
+            top: 8px;
+            right: 10px;
+            background-color: white;
+        }
+        .b4 {
+            position: absolute;
+            border: hidden;
+            width: 30px;
+            height: 12.99px;
+            top: 8px;
+            right: 10px;
+            background-color: white;
+        }
+        .check2 {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        .big_box1 .fa-solid{
+            color: #AAAAAA;
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            font-size: 12px;
+        }
+        .big_box1 .fa-caret-down{
+            position: absolute;
+            top: 0px;
+            left: 17px;
+            font-size: 11px;
+        }
+        .big_box2 .fa-solid{
+            color: #AAAAAA;
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            font-size: 12px;
+        }
+        .big_box2 .fa-caret-down{
+            position: absolute;
+            top: 0px;
+            left: 17px;
+            font-size: 11px;
+        }
+        .png1 {
+            width: 216px;
+        }
+        .png2 {
+            width: 216px;
+        }
+        .png1 {
+            width: 216px;
+        }
+        h3 {
+            margin: 6px 0px 10px;
+        }
+        p{
+            margin: 0px 0px 12px;
+            height: 36px;
+            border-bottom: 1px dotted #3f3f3f;
+        }
+        .fa-regular {
+            position: relative;
+            top: -8px;
+            left: 5px;
+            font-size: 11px;
+        }
+        .st {
+            position: relative;
+            top: -8px;
+            left: 2px;
+            font-size: 11px;
+        }
+        .st2 {
+            position: relative;
+            top: -8px;
+            left: 2px;
+            font-size: 11px;
+        }
+        .log1 {
+            position: relative;
+            top: 8px;
+            left: -48px;
+            color: white;
+            border-radius: 2px;
+            font-size: 7px;
+            background-color: #5cb85c;
+        }
+        .log2 {
+            position: relative;
+            top: 8px;
+            left: -48px;
+            color: white;
+            border-radius: 2px;
+            font-size: 7px;
+            background-color: #f0ad42;
+        }
+        footer{
+            position: absolute;
+            border-top: 1px dotted #8c8c8ced;
+            bottom: 0px;
+            width: 100%;
+            height: 50px;
+        }
+        .last {
+            position: relative;
+            top: 35%;
+            left: 30px;
+            font-size: 13px;
+        }
+        .last2 {
+            position: relative;
+            top: -5%;
+            left: 70px;
+            font-size: 13px;
+        }
+        .last3 {
+            color: #3498db;
+            position: relative;
+            top: -5%;
+            left: 70px;
+            font-size: 13px;
+        }
+        .last4{
+            position: relative;
+            top: -5%;
+            right: -650px;
+            font-size: 11px;
+        }
+        .bu1 .fa-caret-down{
+            position: relative;
+            top: -10px;
+            left: 70px;
+            font-size: 8px;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="box1">
+            <a herf="" class="box2">
+                Oven
+                <div class="box2_2">BETA</div>
+            </a>
+            <a href="" class="box3">
+                    <img class="profile-img" src="/images/test.png">
+                <span class="box4">rudtn4038</span>
+                <span class="bu1">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <!-- <select class="drop" name="" id="">
+                        <option value="1">프로젝트 대쉬보드</option>
+                        <option value="1">계정설정하기</option>
+                        <option value="1">헬프데스크</option>
+                        <option value="1">로그아웃</option>
+                    </select> -->
+                </span>
+            </a>
+        </div>  
+    </header>
+    <div class="page_header">
+        <h1 class="project">프로젝트 대쉬보드</h1>
+        <div class="search">
+            <input class="search2" type="text" value="프로젝트 검색">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <label class="em" for="none"><i class="fa-solid fa-list"></i></label>
+        <label class="em2" for="none"><i class="fa-brands fa-microsoft"></i></label>
+    </div>
+    <a href="" class="my1">나의 프로젝트</a>
+    <a href="" class="my2">나에게 공유된 프로젝트</a>
+    <div class="clear">
+        <button class="b1">모두 선택</button>
+        <button class="b2"> <i class="fa-solid fa-circle-plus"></i>새로운 프로젝트 만들기</button>
+    </div>
+    <div class="big_box1">
+        <input type="checkbox" class="check1">
+        <button class="b3">
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <img src="/images/dsad.png.png" class="png1">
+        <h3><a href="">sadsad</a></h3>
+        <p></p>
+        <i class="fa-regular fa-clock"></i>
+        <strong class="st">2일 전</strong>
+        <a href="" class="log1">로그인 없이 테스트 가능</a>
+    </div>
+    <div class="big_box2">
+        <input type="checkbox" class="check2">
+        <button class="b4">
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <img src="/images/dsad.png.png" class="png1">
+        <h3><a href="">sadsad</a></h3>
+        <p></p>
+        <i class="fa-regular fa-clock"></i>
+        <strong class="st2">2일 전</strong>
+        <a href="" class="log2">특정유저만 테스트 허용</a>
+    </div>
+    <footer>
+        <div class="last">Oven</div>
+        <a href="" class="last2">서비스 이용약관 및 운영원칙</a>
+        <strong class="last3">개인정보처리방침</strong>
+        <small class="last4">© 2015-2016 Kakao Corp.</small>
+    </footer>
+    
+</body>
+</html>
