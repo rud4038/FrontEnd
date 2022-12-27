@@ -2,7 +2,9 @@
     box-sizing: border-box;
     font-size: 14px;
 }
+
 body {
+    height: 1312px;
     margin: 0px;
 }
 
@@ -181,6 +183,7 @@ header {
 
 .row {
     display: flex;
+    height: 713.4px;
 }
 
 .nav-stacked {
@@ -361,4 +364,47 @@ header {
     cursor: pointer;
 }
 
+.container-dashboard {
+    display: flex;
+    align-items: center;
+    
+    position: fixed;
+    bottom: 0px;
 
+
+    padding: 0px 15px;
+    width: 100%;
+    height: 81px;
+}
+
+.fo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #ddd;
+    height: 61px;
+}
+
+
+.footer-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sb {
+    margin: 0px 0px 0px 8px;
+    color: #3498db;
+}
+
+.sb2 {
+    color: #3498db;
+    font-weight: 700;
+}
+
+.footer-right {
+    font-size: 11.9px;
+}
