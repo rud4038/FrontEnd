@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+}
+.side-nav-bar {
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+
+    background-color: #c4c4c4;
+}
+.side-nav-item {
+    height: 40px;
+    padding-bottom: 30px;
+
+    display: block;
+}
+.side-nav-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+.main-cover {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+.main-nav-bar {
+    padding-top: 11px;
+    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.main-nav-item {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+.divider {
+    border: 1px solid #999494;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+.form-content {
+    text-align: center;
+    width: 700px;
+}
+.form-title {
+    text-align: center;
+    font-size: 32px;
+}
+.form-table {
+    width: 100%;
+}
+.row-label {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+td {
+    padding-bottom: 15px;
+}
+#title{
+    width: 510px;
+    height: 35px;
+    border-radius: 6px;
+    float: right;
+}
+#writer {
+    width: 510px;
+    height: 35px;
+    border-radius: 6px;
+    float: right;
+}
+.email-id {
+    width: 220px;
+}
+#emailId {
+    width: 230px;
+    height: 35px;
+    border-radius: 6px;
+    float: right;
+}
+#email {
+    font-size: 26px;
+    font-weight: 100;
+}
+#emailAddress {
+    width: 246px;
+    height: 41px;
+    border-radius: 6px;
+    float: right;
+}
+#contents {
+    width: 512px;
+    height: 180px;
+    border-radius: 6px;
+    float: right;
+}
+.form-input {
+    width: 100%;
+}
+.form-textarea{
+    width: 100%;
+}
+.form-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.form-btn {
+    width: 150px;
+    height: 60px;
+
+    font-size: 24px;
+    color: #ffffff;
+
+    background-color: #1a8fdd;
+
+    border: 0;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
