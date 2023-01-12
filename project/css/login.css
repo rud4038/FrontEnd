@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    padding: 0px;
+}
+li {
+    list-style: none;
+}
+#header .mainimg {
+    position: relative;
+    width: 100%;
+    height: 1400px;
+    background: url(/images/img01.jpg) no-repeat 0 0;
+    background-size: 100%;
+}
+.logocontainer{
+  width: 10%;
+  height: 100px;
+  overflow: hidden;
+  
+}
+.rheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .logo {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+.image01 {
+    
+    padding-top: 30px;
+    width: 50%;
+    height: 30%;
+}
+#header .top_nav{
+    float: right;
+    position: absolute;
+    top: 40px;
+    right: 130px;
+    width: 700px;
+    height: 30px;
+    font-weight: 800;
+    color: black;
+}
+#header .top_nav > li{
+    float: left;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#header .top_nav > li:hover{
+    overflow: visible;
+}
+
+#header .top_nav > li:hover > a{
+    text-decoration: none;
+    color: red;
+}
+
+#header .top_nav .sub {
+    opacity: 0;
+}
+
+#header .top_nav .sub li:hover > a{
+    text-decoration: none;
+    color: red;
+}
+
+#header .top_nav > li:hover .sub{
+    opacity: 1;
+}
+
+#header .icon {
+    float: right;
+    position: relative;
+    top: 44px;
+    right: 75px;
+    letter-spacing:4px;
+}
+
+#header .icon li {
+    float: left;
+    margin-left: 10px;
+}
+
+#header .icon li:hover > a {
+    text-decoration: none;
+    color: red;
+}
+/* ---------------------------------------------------- */
+.content-box {
+    /* padding-top: 100px; */
+    /* margin-top: -50px; */
+}
+.member-wrap {
+    width: 1345px;
+    height: 780px;
+    margin: 100px 52.5px 0px;
+    padding: 0px 72.5px;
+    display: flex;
+    justify-content: space-between;
+}
+.section {
+    width: 525px;
+    height: 780px;
+    padding: 100px 0px 180px;
+    display: flex;
+    flex-direction: column;
+}
+.section-header {
+    margin-top: -70px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.form-login {
+    width: 525px;
+    height: 516px;
+}
+.login-box {
+    width: 525px;
+    height: 401px;
+}
+.input-box {
+    position: relative;
+    margin-top: 45px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.login-input {
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    border-bottom: solid 1px #808080;
+}
+.btn-login-box {
+    margin-top: 43px;
+    text-align: center;
+}
+.btn-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.btn-member-white {
+    width: auto;
+    height: 16px;
+    padding: 0px;
+    border: none;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+.be::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background-color: black;
+    margin: -3px 15px;
+}
+.member-login-btn {
+    margin-top: 45px;
+    padding: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.image {
+    width: 525px;
+    height: 440px;
+    border: none;
+}
+img {
+    width: 100%;
+}
+.image-tag {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    width: 1450px;
+    background: #f1f1f1;
+    padding: 85px 0;
+    min-width: 13px;
+    font-size: 13px;
+}
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-right: 20px;
+  
+}
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  color: #111;
+  max-width: none;
+  margin: auto;
+  padding: 0 5%;
+}
+footer .section_wrapper {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+footer .section_wrapper dt {
+  margin-bottom: 10.5px;
+  padding-bottom: 9.5px;
+  border-bottom: 1px solid #707070;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
+footer .section_wrapper dd {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #111;
+}
+.ft_info{
+  padding-top: 30px;
+  font-size: 14px;
+}
+.footer .ft_row1 .logo{
+  padding-top: 50px;
+}
+.copyright{
+  font-size: 15px;
+}

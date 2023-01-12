@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="rheader">
+            <div class="logocontainer">
+                <a class="logo" href="#">
+                    <img class="image01" src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+            
+            <div class="top_nav">
+                <li>
+                    <a href="#">TOP</a>
+                    <ul class="sub">
+                        <li><a href="#">니트</a></li>
+                        <li><a href="#">맨투맨 / 후드</a></li>
+                        <li><a href="#">티셔츠</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SHIRTS</a>
+                    <ul class="sub">
+                        <li><a href="#">무지</a></li>
+                        <li><a href="#">체크 / 스트라이프</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PANTS</a>
+                    <ul class="sub">
+                        <li><a href="#">데님</a></li>
+                        <li><a href="#">슬랙스</a></li>
+                        <li><a href="#">와이드</a></li>
+                        <li><a href="#">조거 / 트레이닝</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">OUTER</a>
+                    <ul class="sub">
+                        <li><a href="#">패딩</a></li>
+                        <li><a href="#">코트</a></li>
+                        <li><a href="#">가디건 / 조끼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SHOES & ACC</a>
+                    <ul class="sub">
+                        <li><a href="#">신발</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">모자</a></li>
+                    </ul>
+                </li>      
+            </div>
+            <div class="icon">
+                <ul>
+                    <li><a href="#" class="fa-solid fa-user"></a></li>
+                    <li><a href="#" class="fa-solid fa-basket-shopping"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content-box">
+        <div class="member-wrap">
+            <div class="section">
+                <h3 class="section-header">로그인</h3>
+                <form action="" class="form-login">
+                    <div class="login-box">
+                        <div class="input-box">
+                            <label>아이디</label>
+                            <input type="text" placeholder="아이디 또는 이메일을 입력해주세요" class="login-input">
+                        </div>
+                        <div class="input-box">
+                            <label>비밀번호</label>
+                            <input type="password" placeholder="영문, 숫자 조합 6자리 이상" class="login-input">
+                        </div>
+                        <div class="btn-login-box">
+                            <ul class="btn-ul">
+                                <li>
+                                    <button type="button" class="btn-member-white">아이디찾기</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn-member-white be">비밀번호찾기</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn-member-white be">회원가입</button>
+                                </li>
+                            </ul>
+                            <button type="submit" class="member-login-btn">로그인</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="section">
+                <div class="image"><img src="images/loginimage.png" alt=""></div>
+                <button class="image-tag">혁신의 여정 알아보기</button>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="ft_row1">
+          <div class="logo">
+            <img class="image02" src="./images/logo.jpg" alt="">
+          </div>
+      
+          <div class="section_wrapper">
+                  <dl>
+                  <dt>고객센터</dt>
+                  <dd>1668-4296</dd>
+                  <dd><a href="#">cs@03shop.com</a></dd>
+                  <dd>월 ~ 금 10 : 00 ~ 17 : 00</dd>
+              </dl>
+              
+              <dl>
+                  <dt>고객서비스</dt>
+                  <dd><a href="#">문의하기</a></dd>
+                  <dd><a href="#">배송조회</a></dd>
+                  <dd><a href="#">교환&amp;반품</a></dd>
+                  <dd><a href="#">이용안내</a></dd>
+                  <dd><a href="#">이용약관</a></dd>
+                  <dd><a href="#">개인정보처리방침</a></dd>
+              </dl>
+              
+              
+              
+              <div class="lang">
+                <select class="chosen-select" onchange="co_ch_lang(this.value)" style="display: none;">
+                  <option value="ko" selected="">한국어</option>
+                  <option value="en">English</option>
+                  <!--
+                  <option value="ja">日本語</option>
+                  <option value="zn">简体中文</option>
+                      -->
+              </select>
+            </div>
+            <script>
+            $(function() {
+                $('header .chosen-container ').click(function(){
+                    
+                    var hasactive = $("header .chosen-container").hasClass("chosen-with-drop");
+                    
+                    if( hasactive === true) {
+                       $("header").addClass('down1');
+                    } else { 
+                       $("header").removeClass('down1');
+                    }
+                });
+                return
+            });
+            </script>
+          </div>
+        </div>
+        <div class="ft_row2">
+            <div class="copyright">ⓒ 2023 03shop. All right reserved</div>
+          <div class="ft_info">
+              (주) 03shop / CEO : GYUNGSU SIN / CPO : DONGHYUN GO / 사업자번호 : 333-11-22222 / 통신판매신고번호 : 2023-부산진구-2222호 (사업자 정보 확인) / 고객센터 : 1111-1111<br>
+              이메일 문의 : <a href="#">contact@03shop.com</a> / 개인정보보호책임자 : 홍길동 / 주소 : 부산진구 어딘가 / 호스팅제공 : 코리아IT
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
