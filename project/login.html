@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/2e98ef9970.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/slide.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -67,42 +70,43 @@
         </div>
     </header>
     <div class="content-box">
-        <div class="member-wrap">
-            <div class="section">
-                <h3 class="section-header">로그인</h3>
-                <form action="" class="form-login">
-                    <div class="login-box">
-                        <div class="input-box">
-                            <label>아이디</label>
-                            <input type="text" placeholder="아이디 또는 이메일을 입력해주세요" class="login-input">
+        <div class="member-box">
+            <div class="member-wrap">
+                <div class="section">
+                    <h3 class="section-header">로그인</h3>
+                    <form action="" class="form-login">
+                        <div class="login-box">
+                            <div class="input-box">
+                                <label>아이디</label>
+                                <input type="text" id="emailId" name="emailId" placeholder="아이디 또는 이메일을 입력해주세요" class="login-input">
+                            </div>
+                            <div class="input-box">
+                                <label>비밀번호</label>
+                                <input type="password" id ="password" name="password" placeholder="영문, 숫자 조합 6자리 이상" class="login-input">
+                            </div>
+                            <div class="btn-login-box">
+                                <ul class="btn-ul">
+                                    <li>
+                                        <button type="button" class="btn-member-white">아이디찾기</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn-member-white be">비밀번호찾기</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn-member-white be">회원가입</button>
+                                    </li>
+                                </ul>
+                                <button type="submit" class="member-login-btn" onclick="loginInput();">로그인</button>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <label>비밀번호</label>
-                            <input type="password" placeholder="영문, 숫자 조합 6자리 이상" class="login-input">
-                        </div>
-                        <div class="btn-login-box">
-                            <ul class="btn-ul">
-                                <li>
-                                    <button type="button" class="btn-member-white">아이디찾기</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn-member-white be">비밀번호찾기</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn-member-white be">회원가입</button>
-                                </li>
-                            </ul>
-                            <button type="submit" class="member-login-btn">로그인</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+                <div class="section">
+                    <div class="image"><img src="images/loginimage.png" alt=""></div>
 
-            <div class="section">
-                <div class="image"><img src="images/loginimage.png" alt=""></div>
-                <button class="image-tag">혁신의 여정 알아보기</button>
+                    <button class="image-tag">혁신의 여정 알아보기</button>
+                </div>
             </div>
-
         </div>
     </div>
     <footer class="footer">
@@ -166,5 +170,21 @@
           </div>
         </div>
     </footer>
+    <script>
+        const loginInput = () => {
+            const emailId = document.getElementById('emailId').value;
+            const password = document.getElementById('password').value;
+
+            if (!emailId) {
+                alert('아이디를 입력하세요.');
+                return;
+            }
+
+            if (!password) {
+                alert('비밀번호를 입력하세요.');
+                return;
+            }
+        }
+    </script>
 </body>
 </html>

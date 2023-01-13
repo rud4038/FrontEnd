@@ -1,4 +1,6 @@
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -14,7 +16,10 @@ ul {
 }
 li {
     list-style: none;
+}#wrap {
+    width: 100%;
 }
+
 #header .mainimg {
     position: relative;
     width: 100%;
@@ -22,32 +27,21 @@ li {
     background: url(/images/img01.jpg) no-repeat 0 0;
     background-size: 100%;
 }
-.logocontainer{
-  width: 10%;
-  height: 100px;
-  overflow: hidden;
-  
-}
-.rheader{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 #header .logo {
     position: absolute;
     top: -40px;
     left: 10px;
-    max-width: 100%;
-    height: auto;
-    display: block;
+}
 
-}
 .image01 {
-    
-    padding-top: 30px;
-    width: 50%;
-    height: 30%;
+  padding-top: 30px;
+  width: 50%;
+  height: 30%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
+
 #header .top_nav{
     float: right;
     position: absolute;
@@ -71,7 +65,6 @@ li {
 }
 
 #header .top_nav > li:hover > a{
-    text-decoration: none;
     color: red;
 }
 
@@ -80,7 +73,6 @@ li {
 }
 
 #header .top_nav .sub li:hover > a{
-    text-decoration: none;
     color: red;
 }
 
@@ -102,13 +94,18 @@ li {
 }
 
 #header .icon li:hover > a {
-    text-decoration: none;
     color: red;
 }
 /* ---------------------------------------------------- */
 .content-box {
-    /* padding-top: 100px; */
+    width: 100%;
     /* margin-top: -50px; */
+}
+.member-box {
+    /* width: 1500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .member-wrap {
     width: 1345px;
@@ -154,6 +151,9 @@ label {
     font-size: 15px;
     border: none;
     border-bottom: solid 1px #808080;
+}
+.login-input:focus {
+    outline: none;
 }
 .btn-login-box {
     margin-top: 43px;
@@ -211,8 +211,32 @@ img {
     border: none;
     cursor: pointer;
 }
+.btns { /*버튼 위치*/
+    margin-top: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 9999;
+  margin-left: -45px; */
+}
+
+/* .btns li { 버튼 모양(클릭전)
+  float: left;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btns li.on { 버튼 클릭시 검정색
+  background-color: skyblue;
+} */
 footer {
-    width: 1450px;
     background: #f1f1f1;
     padding: 85px 0;
     min-width: 13px;
